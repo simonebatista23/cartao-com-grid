@@ -1,0 +1,106 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--Light-grayish);
+    width: 100%;
+    min-height: 100vh;
+    color: var(--Light-gray);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 25px;
+    padding:20px;
+    margin: 0 40px;
+}
+
+
+.livro1 {
+    background: url('/images/bg-pattern-quotation.svg') no-repeat right 70px top;
+    background-color: var(--Moderate);
+    grid-area: 1/1/2/5;
+}
+
+.livro2 {
+    grid-area: 1/5/2;
+    background-color: var(--Very-dark-grayish);
+}
+
+.livro3 {
+    color: black;
+    grid-area: 2/1/3;
+    background-color: var(--Light-gray);
+}
+
+.livro4 {
+    grid-area: 2/2/3/6;
+    background-color: var(--Light-grayy);
+}
+
+.livro5 {
+    color: black;
+    grid-area: 1/6/3;
+    background-color: var(--Light-gray);
+}
+
+.ola {
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.paragrafo-primeiro {
+    margin-top: 20px;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.nome {
+    display: flex;
+    align-items: center;
+}
+
+.nome img {
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+}
+
+.pagragrafo-principal {
+    margin-top: 25px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.nome-autor {
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.nome-autor p {
+    font-weight: 300;
+}
+
+@media(max-width:1000px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+}
+
+@media(max-width:600px){
+    .pagragrafo-principal{
+        font-size: 13px;
+    }
+    .paragrafo-primeiro{
+        font-size: 16px;
+    }
+
+}
